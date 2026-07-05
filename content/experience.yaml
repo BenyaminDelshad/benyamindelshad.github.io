@@ -1,0 +1,20 @@
+# Work history — most recent first. Add or remove entries as needed.
+# TODO: replace the placeholder roles below with your real experience.
+- role: "Backend Software Engineer"
+  company: "Company Name"
+  period: "2023 — Present"
+  location: "Remote"
+  highlights:
+    - "Designed and built REST/gRPC services handling high request volumes."
+    - "Improved p99 latency by profiling and optimizing hot paths."
+    - "Owned CI/CD and observability for a set of production services."
+  tech: ["Kotlin", "Java", "PostgreSQL", "Kafka", "Docker", "Kubernetes"]
+
+- role: "Software Engineer"
+  company: "Previous Company"
+  period: "2021 — 2023"
+  location: "City, Country"
+  highlights:
+    - "Delivered features across the backend of a customer-facing product."
+    - "Wrote and maintained integration and load tests."
+  tech: ["Java", "Spring Boot", "MySQL", "AWS"]

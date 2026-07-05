@@ -1,0 +1,12 @@
+# Gradle
+.gradle/
+build/
+
+# IDE / local tooling
+.idea/
+*.iml
+.vscode/
+.claude/
+
+# OS
+.DS_Store
