@@ -4,8 +4,7 @@ role: "Backend Software Engineer"
 tagline: "I build reliable, scalable backend systems and clean APIs."
 email: "benyamindelshad@gmail.com"
 location: "" # e.g. "Berlin, Germany" — leave blank to hide
-# Change this to your custom domain once it's live (used for canonical + Open Graph tags).
-baseUrl: "https://benyamindelshad.github.io"
+baseUrl: "https://delshad.dev"
 description: "Benyamin Delshad — backend software engineer specializing in scalable services, APIs, and distributed systems."
 
 links:
