@@ -4,7 +4,7 @@ My personal site — a small **static-site generator written in Kotlin**. Conten
 in plain Markdown/YAML files; a Kotlin program renders them into a fast, dependency-free
 static site that ships to GitHub Pages via GitHub Actions.
 
-**Live:** https://benyamindelshad.com
+**Live:** https://delshad.dev
 
 ## How it works
 
