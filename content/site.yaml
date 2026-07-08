@@ -2,7 +2,7 @@
 name: "Benyamin Delshad"
 role: "Backend Software Engineer"
 tagline: "I build reliable, scalable backend systems and clean APIs."
-email: "benyamindelshad@gmail.com"
+email: "benyamin@delshad.dev"
 location: "" # e.g. "Berlin, Germany" — leave blank to hide
 baseUrl: "https://delshad.dev"
 description: "Benyamin Delshad — backend software engineer specializing in scalable services, APIs, and distributed systems."
@@ -11,6 +11,6 @@ links:
   - label: "GitHub"
     url: "https://github.com/BenyaminDelshad"
   - label: "LinkedIn"
-    url: "https://www.linkedin.com/in/your-handle" # TODO: replace with your real LinkedIn handle
+    url: "https://www.linkedin.com/in/benyamindelshad/"
   - label: "Email"
-    url: "mailto:benyamindelshad@gmail.com"
+    url: "mailto:benyamin@delshad.dev"
