@@ -41,7 +41,7 @@
   period: "Feb 2020 — Sep 2020"
   location: "Klosterneuburg, Austria"
   highlights:
-    - "Validated theoretical research by building evolutionary game-theory simulations to analyze probabilistic cooperation strategies."
+    - "Validated theoretical research by building evolutionary game-theory simulations to analyze probabilistic cooperation strategies, under the supervision of Prof. Krishnendu Chatterjee."
   tech: ["MATLAB", "Algorithms"]
 
 - role: "Research Intern"
@@ -51,3 +51,11 @@
   highlights:
     - "Modeled public transit networks as temporal graphs and designed algorithms to assess infrastructure changes using real-world datasets."
   tech: ["C/C++", "Algorithms", "Graph theory"]
+
+- role: "Teaching Assistant"
+  company: "University of Tehran"
+  period: "Sep 2015 — Feb 2018"
+  location: "Tehran, Iran"
+  highlights:
+    - "Ran tutorials across core CS courses: graph theory and applications, design and analysis of algorithms, fundamentals of combinatorics, advanced programming (C++), and foundations of programming (Java)."
+  tech: ["C++", "Java", "Algorithms"]

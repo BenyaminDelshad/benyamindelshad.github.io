@@ -7,7 +7,8 @@ theory, and graph algorithms across Switzerland, Austria, and France.
 
 Beyond writing high-quality code, I care about how teams work: I've facilitated
 sprint retrospectives and organized team events to help build positive, efficient,
-and collaborative environments.
+and collaborative environments. Teaching runs through my career too — from CS
+tutorials at the University of Tehran to software-engineering courses in St. Gallen.
 
 I work in **English** (C1), get along in **German** (B1), and **Persian** is my
 native language.

@@ -4,6 +4,7 @@
   period: "2018 — 2020"
   location: "Paris, France"
   highlights:
+    - "Completed the MPRI track (Master Parisien de Recherche en Informatique); master's thesis supervised by Prof. Krishnendu Chatterjee (ISTA)."
     - "Merit-based scholarship from the Mathematical Sciences Foundation of Paris (Fondation Sciences Mathématiques de Paris)."
 
 - degree: "B.Sc. Computer Science"
@@ -11,5 +12,8 @@
   period: "2014 — 2018"
   location: "Tehran, Iran"
   highlights:
+    - "Ranked 4th nationally in the Iranian graduate-entrance exam (Concours) for Computer Science (2017), after ranking 8th in 2016."
     - "Two-time bronze medalist, Iranian National Mathematics Competition for University Students (2016, 2017)."
-    - "Ranked 8th, ACM/ICPC International Collegiate Programming Contest, Asia Region — Tehran site (2016)."
+    - "Three-time ACM/ICPC contestant, Asia Region — Tehran site (2014–2016); ranked 8th in 2016."
+    - "Prof. Ahrabian Memorial Faculty Fellowship — awarded to the top 7 students across Computer Science, Mathematics, and Statistics."
+    - "University of Tehran Foundation Fellowship — top 500 among 35,000+ students."
