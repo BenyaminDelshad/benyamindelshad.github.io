@@ -160,15 +160,10 @@ h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; }
   box-shadow: var(--shadow);
 }
 .card__head {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 4px 16px;
   margin-bottom: 12px;
 }
 .card__title { font-size: 1.05rem; margin: 0; }
-.card__meta { color: var(--text-muted); font-size: 14px; white-space: nowrap; }
+.card__meta { display: block; margin-top: 4px; color: var(--text-muted); font-size: 14px; }
 .card__desc { margin: 0 0 14px; color: var(--text); }
 .card__list { margin: 0; padding-left: 20px; color: var(--text-muted); }
 .card__list li { margin-bottom: 6px; }

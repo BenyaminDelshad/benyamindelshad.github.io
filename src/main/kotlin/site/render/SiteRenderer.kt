@@ -88,9 +88,9 @@ class SiteRenderer(
                 a(href = "/", classes = "site-header__name") { +config.name }
                 nav("site-nav") {
                     a(href = "#about") { +"About" }
-                    a(href = "#experience") { +"Experience" }
-                    a(href = "#projects") { +"Projects" }
-                    a(href = "#education") { +"Education" }
+                    if (experience.isNotEmpty()) a(href = "#experience") { +"Experience" }
+                    if (projects.isNotEmpty()) a(href = "#projects") { +"Projects" }
+                    if (education.isNotEmpty()) a(href = "#education") { +"Education" }
                 }
             }
         }
