@@ -2,6 +2,7 @@ package site.render
 
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
+import site.model.Education
 import site.model.Experience
 import site.model.Project
 import site.model.SiteConfig
@@ -16,6 +17,7 @@ class SiteRenderer(
     private val aboutHtml: String,
     private val experience: List<Experience>,
     private val projects: List<Project>,
+    private val education: List<Education>,
 ) {
 
     fun indexPage(): String = document(title = "${config.name} — ${config.role}") {
@@ -25,6 +27,7 @@ class SiteRenderer(
             aboutSection()
             experienceSection()
             projectsSection()
+            educationSection()
         }
         siteFooter()
     }
@@ -87,6 +90,7 @@ class SiteRenderer(
                     a(href = "#about") { +"About" }
                     a(href = "#experience") { +"Experience" }
                     a(href = "#projects") { +"Projects" }
+                    a(href = "#education") { +"Education" }
                 }
             }
         }
@@ -189,6 +193,34 @@ class SiteRenderer(
                                             +"Source ↗"
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private fun MAIN.educationSection() {
+        if (education.isEmpty()) return
+        section("section section--alt") {
+            id = "education"
+            div("container") {
+                h2("section__title") { +"Education & Achievements" }
+                div("timeline") {
+                    education.forEach { entry ->
+                        article("card") {
+                            div("card__head") {
+                                h3("card__title") { +"${entry.degree} · ${entry.institution}" }
+                                span("card__meta") {
+                                    +entry.period
+                                    if (entry.location.isNotBlank()) +" · ${entry.location}"
+                                }
+                            }
+                            if (entry.highlights.isNotEmpty()) {
+                                ul("card__list") {
+                                    entry.highlights.forEach { li { +it } }
                                 }
                             }
                         }

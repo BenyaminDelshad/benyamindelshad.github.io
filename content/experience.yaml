@@ -1,20 +1,53 @@
-# Work history — most recent first. Add or remove entries as needed.
-# TODO: replace the placeholder roles below with your real experience.
-- role: "Backend Software Engineer"
-  company: "Company Name"
-  period: "2023 — Present"
-  location: "Remote"
+# Work history — most recent first.
+- role: "Software Engineer — Checkout"
+  company: "Yatta Solutions"
+  period: "Jul 2026 — present"
+  location: "Frankfurt am Main, Germany"
   highlights:
-    - "Designed and built REST/gRPC services handling high request volumes."
-    - "Improved p99 latency by profiling and optimizing hot paths."
-    - "Owned CI/CD and observability for a set of production services."
-  tech: ["Kotlin", "Java", "PostgreSQL", "Kafka", "Docker", "Kubernetes"]
+    - "Working on platform integration for Checkout, Yatta's product for seamless digital product sales."
+  tech: ["Java", "Kotlin", "Spring Boot", "Kafka", "PostgreSQL", "REST APIs"]
 
-- role: "Software Engineer"
-  company: "Previous Company"
-  period: "2021 — 2023"
-  location: "City, Country"
+- role: "Software Engineer — SMA Solar project"
+  company: "Yatta Solutions"
+  period: "Dec 2023 — Jun 2026"
+  location: "Frankfurt am Main, Germany"
   highlights:
-    - "Delivered features across the backend of a customer-facing product."
-    - "Wrote and maintained integration and load tests."
-  tech: ["Java", "Spring Boot", "MySQL", "AWS"]
+    - "Developed an EEBUS protocol driver to process grid-based power-limitation requests, ensuring compliance with German energy regulations (§ 14a EnWG and § 9 EEG)."
+    - "Architected GitLab CI/CD pipelines automating builds, code formatting, static analysis, and test coverage."
+    - "Built core energy-management services and APIs in a cross-functional team, optimizing end-user energy consumption and costs."
+    - "Helped achieve an 80%+ customer-satisfaction score (NPS) by consistently delivering high-quality software."
+  tech: ["Java", "Python", "TypeScript", "Bash", "REST APIs"]
+
+- role: "Software Engineer — Rhenus Logistics project"
+  company: "Yatta Solutions"
+  period: "Apr 2022 — Nov 2023"
+  location: "Frankfurt am Main, Germany"
+  highlights:
+    - "Cut shipment-processing overhead with an automated compliance system that proactively blocks high-risk shipments to sensitive destinations."
+    - "Engineered a Spring Boot REST service providing end users with real-time shipment quotes."
+  tech: ["Java", "Spring Boot", "JavaScript", "Oracle DB"]
+
+- role: "Doctoral Researcher & Teaching Assistant"
+  company: "University of St. Gallen"
+  period: "Oct 2020 — Mar 2022"
+  location: "St. Gallen, Switzerland"
+  highlights:
+    - "Accelerated distributed-systems development by designing a domain-specific language that automates operation-level consistency inference."
+    - "Taught in courses on engineering software systems, software engineering, and programming for data science."
+  tech: ["Java", "NoSQL", "Maven", "JML"]
+
+- role: "Research Intern — Master's thesis"
+  company: "Institute of Science and Technology Austria (ISTA)"
+  period: "Feb 2020 — Sep 2020"
+  location: "Klosterneuburg, Austria"
+  highlights:
+    - "Validated theoretical research by building evolutionary game-theory simulations to analyze probabilistic cooperation strategies."
+  tech: ["MATLAB", "Algorithms"]
+
+- role: "Research Intern"
+  company: "IRIF — Research Institute on the Foundations of Computer Science"
+  period: "Apr 2019 — Sep 2019"
+  location: "Paris, France"
+  highlights:
+    - "Modeled public transit networks as temporal graphs and designed algorithms to assess infrastructure changes using real-world datasets."
+  tech: ["C/C++", "Algorithms", "Graph theory"]

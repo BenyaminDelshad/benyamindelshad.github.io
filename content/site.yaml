@@ -1,9 +1,9 @@
 # Site metadata and social links. Edit these to update the header, hero, and footer.
 name: "Benyamin Delshad"
 role: "Backend Software Engineer"
-tagline: "I build reliable, scalable backend systems and clean APIs."
+tagline: "I design and build REST APIs and microservices that hold up in production."
 email: "benyamin@delshad.dev"
-location: "" # e.g. "Berlin, Germany" — leave blank to hide
+location: "Frankfurt am Main, Germany"
 baseUrl: "https://delshad.dev"
 description: "Benyamin Delshad — backend software engineer specializing in scalable services, APIs, and distributed systems."
 

@@ -27,6 +27,7 @@ fun main() {
         aboutHtml = loader.aboutHtml(),
         experience = loader.experience(),
         projects = loader.projects(),
+        education = loader.education(),
     )
 
     prepareOutput(outputDir)

@@ -1,0 +1,15 @@
+# Education — degrees plus the achievements earned along the way.
+- degree: "M.Sc. Computer Science"
+  institution: "Université Paris Cité"
+  period: "2018 — 2020"
+  location: "Paris, France"
+  highlights:
+    - "Merit-based scholarship from the Mathematical Sciences Foundation of Paris (Fondation Sciences Mathématiques de Paris)."
+
+- degree: "B.Sc. Computer Science"
+  institution: "University of Tehran"
+  period: "2014 — 2018"
+  location: "Tehran, Iran"
+  highlights:
+    - "Two-time bronze medalist, Iranian National Mathematics Competition for University Students (2016, 2017)."
+    - "Ranked 8th, ACM/ICPC International Collegiate Programming Contest, Asia Region — Tehran site (2016)."

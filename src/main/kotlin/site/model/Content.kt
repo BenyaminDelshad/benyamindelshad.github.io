@@ -35,6 +35,16 @@ data class Experience(
     val tech: List<String> = emptyList(),
 )
 
+/** A degree plus the honors earned during it, loaded from `content/education.yaml`. */
+@Serializable
+data class Education(
+    val degree: String,
+    val institution: String,
+    val period: String,
+    val location: String = "",
+    val highlights: List<String> = emptyList(),
+)
+
 /** A portfolio project, loaded from `content/projects.yaml`. */
 @Serializable
 data class Project(

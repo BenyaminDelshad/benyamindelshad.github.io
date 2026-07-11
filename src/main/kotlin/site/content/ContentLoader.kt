@@ -4,6 +4,7 @@ import com.charleskorn.kaml.Yaml
 import com.vladsch.flexmark.html.HtmlRenderer
 import com.vladsch.flexmark.parser.Parser
 import kotlinx.serialization.builtins.ListSerializer
+import site.model.Education
 import site.model.Experience
 import site.model.Project
 import site.model.SiteConfig
@@ -26,6 +27,9 @@ class ContentLoader(private val root: Path) {
 
     fun experience(): List<Experience> =
         yaml.decodeFromString(ListSerializer(Experience.serializer()), read("experience.yaml"))
+
+    fun education(): List<Education> =
+        yaml.decodeFromString(ListSerializer(Education.serializer()), read("education.yaml"))
 
     fun projects(): List<Project> =
         yaml.decodeFromString(ListSerializer(Project.serializer()), read("projects.yaml"))
