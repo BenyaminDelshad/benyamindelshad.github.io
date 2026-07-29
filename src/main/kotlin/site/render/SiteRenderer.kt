@@ -6,6 +6,7 @@ import site.model.Education
 import site.model.Experience
 import site.model.Project
 import site.model.SiteConfig
+import site.model.SkillGroup
 import java.time.Year
 
 /**
@@ -18,13 +19,18 @@ class SiteRenderer(
     private val experience: List<Experience>,
     private val projects: List<Project>,
     private val education: List<Education>,
+    private val skills: List<SkillGroup>,
 ) {
 
-    fun indexPage(): String = document(title = "${config.name} — ${config.role}") {
+    private val pageTitle: String =
+        config.metaTitle.ifBlank { "${config.name} · ${config.role}" }
+
+    fun indexPage(): String = document(title = pageTitle) {
         siteHeader()
         main {
             heroSection()
             aboutSection()
+            techStackSection()
             experienceSection()
             projectsSection()
             educationSection()
@@ -32,7 +38,7 @@ class SiteRenderer(
         siteFooter()
     }
 
-    fun notFoundPage(): String = document(title = "Page not found — ${config.name}") {
+    fun notFoundPage(): String = document(title = "Page not found · ${config.name}") {
         main {
             section("section section--center") {
                 h1 { +"404" }
@@ -88,6 +94,7 @@ class SiteRenderer(
                 a(href = "/", classes = "site-header__name") { +config.name }
                 nav("site-nav") {
                     a(href = "#about") { +"About" }
+                    if (skills.isNotEmpty()) a(href = "#skills") { +"Skills" }
                     if (experience.isNotEmpty()) a(href = "#experience") { +"Experience" }
                     if (projects.isNotEmpty()) a(href = "#projects") { +"Projects" }
                     if (education.isNotEmpty()) a(href = "#education") { +"Education" }
@@ -107,7 +114,7 @@ class SiteRenderer(
                 if (config.location.isNotBlank()) {
                     p("hero__location") { +config.location }
                 }
-                if (config.links.isNotEmpty()) {
+                if (config.links.isNotEmpty() || config.cvUrl.isNotBlank()) {
                     div("hero__links") {
                         config.links.forEach { link ->
                             a(href = link.url, classes = "button") {
@@ -116,6 +123,12 @@ class SiteRenderer(
                                     target = "_blank"
                                 }
                                 +link.label
+                            }
+                        }
+                        if (config.cvUrl.isNotBlank()) {
+                            a(href = config.cvUrl, classes = "button button--primary") {
+                                attributes["download"] = ""
+                                +"Download CV"
                             }
                         }
                     }
@@ -131,6 +144,24 @@ class SiteRenderer(
                 h2("section__title") { +"About" }
                 div("prose") {
                     unsafe { +aboutHtml }
+                }
+            }
+        }
+    }
+
+    private fun MAIN.techStackSection() {
+        if (skills.isEmpty()) return
+        section("section") {
+            id = "skills"
+            div("container") {
+                h2("section__title") { +"Tech Stack" }
+                div("stack-groups") {
+                    skills.forEach { group ->
+                        div("stack-group") {
+                            h3("stack-group__label") { +group.group }
+                            tagRow(group.items)
+                        }
+                    }
                 }
             }
         }
@@ -245,9 +276,16 @@ class SiteRenderer(
                         +" · "
                         a(href = "mailto:${config.email}", classes = "link") { +config.email }
                     }
+                    if (config.cvUrl.isNotBlank()) {
+                        +" · "
+                        a(href = config.cvUrl, classes = "link") {
+                            attributes["download"] = ""
+                            +"Download CV"
+                        }
+                    }
                 }
                 p("site-footer__built") {
-                    +"Built with Kotlin — "
+                    +"Built with Kotlin · "
                     val repo = config.links.firstOrNull { it.label.equals("GitHub", ignoreCase = true) }
                     if (repo != null) {
                         a(href = repo.url, classes = "link") {

@@ -8,5 +8,8 @@ build/
 .vscode/
 .claude/
 
+# Local-only working files (never publish)
+local/
+
 # OS
 .DS_Store

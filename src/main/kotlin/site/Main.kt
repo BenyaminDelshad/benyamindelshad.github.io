@@ -28,6 +28,7 @@ fun main() {
         experience = loader.experience(),
         projects = loader.projects(),
         education = loader.education(),
+        skills = loader.skills(),
     )
 
     prepareOutput(outputDir)

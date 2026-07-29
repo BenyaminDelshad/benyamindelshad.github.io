@@ -1,0 +1,15 @@
+# Tech stack — grouped pills in the "Tech Stack" section. Edit freely.
+- group: "Languages"
+  items: ["Kotlin", "Java", "Python", "SQL", "Bash", "C/C++"]
+
+- group: "Backend"
+  items: ["Spring Boot", "REST APIs", "Microservices", "Event-driven architecture", "Apache Kafka", "Avro + Schema Registry"]
+
+- group: "Data"
+  items: ["PostgreSQL", "Oracle DB", "Flyway", "JPA/Hibernate"]
+
+- group: "Infrastructure"
+  items: ["Kubernetes", "Docker/Podman", "Terraform", "GitLab CI/CD", "Grafana", "Confluent Cloud", "AWS S3"]
+
+- group: "Practices"
+  items: ["Domain-Driven Design", "Hexagonal architecture", "TDD (JUnit, Kotest, MockK, Testcontainers)", "Scrum", "Code review"]

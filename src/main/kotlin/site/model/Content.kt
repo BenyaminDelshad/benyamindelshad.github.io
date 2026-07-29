@@ -14,7 +14,18 @@ data class SiteConfig(
     val baseUrl: String = "",
     /** Short meta description for SEO and social previews. */
     val description: String = "",
+    /** Overrides the `<title>`/og:title when set; otherwise "name · role" is used. */
+    val metaTitle: String = "",
+    /** Path to a downloadable CV/résumé; renders a download button when set. */
+    val cvUrl: String = "",
     val links: List<Link> = emptyList(),
+)
+
+/** A named group of skills/technologies, loaded from `content/skills.yaml`. */
+@Serializable
+data class SkillGroup(
+    val group: String,
+    val items: List<String> = emptyList(),
 )
 
 /** A labelled external link (GitHub, LinkedIn, email, …). */

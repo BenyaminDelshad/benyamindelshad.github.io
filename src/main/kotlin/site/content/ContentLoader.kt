@@ -8,6 +8,7 @@ import site.model.Education
 import site.model.Experience
 import site.model.Project
 import site.model.SiteConfig
+import site.model.SkillGroup
 import java.nio.file.Path
 import kotlin.io.path.readText
 
@@ -30,6 +31,9 @@ class ContentLoader(private val root: Path) {
 
     fun education(): List<Education> =
         yaml.decodeFromString(ListSerializer(Education.serializer()), read("education.yaml"))
+
+    fun skills(): List<SkillGroup> =
+        yaml.decodeFromString(ListSerializer(SkillGroup.serializer()), read("skills.yaml"))
 
     fun projects(): List<Project> =
         yaml.decodeFromString(ListSerializer(Project.serializer()), read("projects.yaml"))

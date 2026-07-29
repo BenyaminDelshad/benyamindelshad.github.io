@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------------------------
-   Personal site styles — hand-written, dependency-free.
+   Personal site styles: hand-written, dependency-free.
    Light/dark via prefers-color-scheme, responsive with CSS variables.
 --------------------------------------------------------------------------- */
 
@@ -132,6 +132,12 @@ h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; }
 }
 .button:hover { border-color: var(--accent); text-decoration: none; }
 .button:active { transform: translateY(1px); }
+.button--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+.button--primary:hover { filter: brightness(1.06); }
 
 /* ---- Prose (Markdown output) ---- */
 .prose p {
@@ -175,6 +181,17 @@ h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; }
 .card--project { display: flex; flex-direction: column; }
 .card__links { margin-top: auto; padding-top: 14px; display: flex; gap: 16px; }
 .link { font-size: 14px; font-weight: 500; }
+
+/* ---- Tech stack ---- */
+.stack-groups { display: grid; gap: 18px; }
+.stack-group__label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0;
+}
+.stack-group .tags { margin-top: 8px; }
 
 /* ---- Tag pills ---- */
 .tags {

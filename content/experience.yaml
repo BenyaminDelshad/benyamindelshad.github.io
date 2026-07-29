@@ -1,15 +1,17 @@
 # Work history — most recent first.
-- role: "Software Engineer — Checkout"
+- role: "Software Engineer · Checkout"
   company: "Yatta Solutions"
-  period: "Jul 2026 — present"
+  period: "Jul 2026 – present"
   location: "Frankfurt am Main, Germany"
   highlights:
-    - "Working on platform integration for Checkout, Yatta's product for seamless digital product sales."
-  tech: ["Java", "Kotlin", "Spring Boot", "Kafka", "PostgreSQL", "REST APIs"]
+    - "I work on platform integration for Checkout, Yatta's e-commerce platform for digital goods, building the delivery domain that turns completed purchases into fulfilled products."
+    - "My day-to-day is event-driven backend engineering: Kafka consumers and producers with Avro schemas, asynchronous integrations with external services, and Domain-Driven Design with hexagonal architecture."
+    - "I focus on production readiness: reliability patterns such as timeouts, retries, and dead-letter queues, security-conscious handling of personal data, and automated testing from unit level to full end-to-end runs."
+  tech: ["Kotlin", "Spring Boot", "Apache Kafka", "Avro", "PostgreSQL", "Flyway", "Kubernetes", "Terraform"]
 
-- role: "Software Engineer — SMA Solar project"
+- role: "Software Engineer · SMA Solar project"
   company: "Yatta Solutions"
-  period: "Dec 2023 — Jun 2026"
+  period: "Dec 2023 – Jun 2026"
   location: "Frankfurt am Main, Germany"
   highlights:
     - "Developed an EEBUS protocol driver to process grid-based power-limitation requests, ensuring compliance with German energy regulations (§ 14a EnWG and § 9 EEG)."
@@ -18,9 +20,9 @@
     - "Helped achieve an 80%+ customer-satisfaction score (NPS) by consistently delivering high-quality software."
   tech: ["Java", "Python", "TypeScript", "Bash", "REST APIs"]
 
-- role: "Software Engineer — Rhenus Logistics project"
+- role: "Software Engineer · Rhenus Logistics project"
   company: "Yatta Solutions"
-  period: "Apr 2022 — Nov 2023"
+  period: "Apr 2022 – Nov 2023"
   location: "Frankfurt am Main, Germany"
   highlights:
     - "Cut shipment-processing overhead with an automated compliance system that proactively blocks high-risk shipments to sensitive destinations."
@@ -29,24 +31,24 @@
 
 - role: "Doctoral Researcher & Teaching Assistant"
   company: "University of St. Gallen"
-  period: "Oct 2020 — Mar 2022"
+  period: "Oct 2020 – Mar 2022"
   location: "St. Gallen, Switzerland"
   highlights:
     - "Accelerated distributed-systems development by designing a domain-specific language that automates operation-level consistency inference."
     - "Taught in courses on engineering software systems, software engineering, and programming for data science."
   tech: ["Java", "NoSQL", "Maven", "JML"]
 
-- role: "Research Intern — Master's thesis"
+- role: "Research Intern · Master's thesis"
   company: "Institute of Science and Technology Austria (ISTA)"
-  period: "Feb 2020 — Sep 2020"
+  period: "Feb 2020 – Sep 2020"
   location: "Klosterneuburg, Austria"
   highlights:
     - "Validated theoretical research by building evolutionary game-theory simulations to analyze probabilistic cooperation strategies, under the supervision of Prof. Krishnendu Chatterjee."
   tech: ["MATLAB", "Algorithms"]
 
-- role: "Research Intern"
-  company: "IRIF — Research Institute on the Foundations of Computer Science"
-  period: "Apr 2019 — Sep 2019"
+- role: "Research Intern · Graph Algorithms for Transit Routing"
+  company: "IRIF"
+  period: "Apr 2019 – Sep 2019"
   location: "Paris, France"
   highlights:
     - "Modeled public transit networks as temporal graphs and designed algorithms to assess infrastructure changes using real-world datasets."
@@ -54,7 +56,7 @@
 
 - role: "Teaching Assistant"
   company: "University of Tehran"
-  period: "Sep 2015 — Feb 2018"
+  period: "Sep 2015 – Feb 2018"
   location: "Tehran, Iran"
   highlights:
     - "Ran tutorials across core CS courses: graph theory and applications, design and analysis of algorithms, fundamentals of combinatorics, advanced programming (C++), and foundations of programming (Java)."
