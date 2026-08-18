@@ -1,15 +1,15 @@
-# Tech stack — grouped pills in the "Tech Stack" section. Edit freely.
+# Tech stack — grouped pills in the "Tech Stack" section. Mirrors the public CV. Edit freely.
 - group: "Languages"
   items: ["Kotlin", "Java", "Python", "SQL", "Bash", "C/C++"]
 
 - group: "Backend"
-  items: ["Spring Boot", "REST APIs", "Microservices", "Event-driven architecture", "Apache Kafka", "Avro + Schema Registry"]
+  items: ["Spring Boot", "REST APIs", "Microservices", "Event-driven architecture", "Apache Kafka", "Avro + Schema Registry", "Temporal workflow orchestration", "Saga pattern", "Idempotency", "Dead-letter queues"]
 
 - group: "Data"
   items: ["PostgreSQL", "Oracle DB", "Flyway", "JPA/Hibernate"]
 
 - group: "Infrastructure"
-  items: ["Kubernetes", "Docker/Podman", "Terraform", "GitLab CI/CD", "Grafana", "Confluent Cloud", "AWS S3"]
+  items: ["Kubernetes", "Docker/Podman", "GitHub Actions", "GitLab CI/CD", "AWS S3", "Confluent Cloud", "Micrometer + structured logging", "Grafana"]
 
 - group: "Practices"
-  items: ["Domain-Driven Design", "Hexagonal architecture", "TDD (JUnit, Kotest, MockK, Testcontainers)", "Scrum", "Code review"]
+  items: ["Domain-Driven Design", "Hexagonal architecture", "Clean Code", "TDD (JUnit, Kotest, MockK, Testcontainers)", "SonarCloud quality gates", "Scrum", "Code review"]

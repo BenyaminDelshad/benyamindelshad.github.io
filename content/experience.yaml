@@ -4,10 +4,13 @@
   period: "Jul 2026 – present"
   location: "Frankfurt am Main, Germany"
   highlights:
-    - "I work on platform integration for Checkout, Yatta's e-commerce platform for digital goods, building the delivery domain that turns completed purchases into fulfilled products."
-    - "My day-to-day is event-driven backend engineering: Kafka consumers and producers with Avro schemas, asynchronous integrations with external services, and Domain-Driven Design with hexagonal architecture."
-    - "I focus on production readiness: reliability patterns such as timeouts, retries, and dead-letter queues, security-conscious handling of personal data, and automated testing from unit level to full end-to-end runs."
-  tech: ["Kotlin", "Spring Boot", "Apache Kafka", "Avro", "PostgreSQL", "Flyway", "Kubernetes", "Terraform"]
+    - "Architected and built a greenfield, event-driven fulfillment service (Kotlin, Spring Boot) that turns a completed purchase into everything the customer is entitled to: generated tickets, a print-at-home PDF, archival, and a delivery email."
+    - "Designed a Temporal workflow orchestrating multi-channel delivery with saga compensation, graded blocking versus best-effort failure handling, and purchase-scoped idempotency so a retried order never delivers twice."
+    - "Built five Kafka and Avro consumer pipelines against Confluent Schema Registry, each with its own retry classification, a dead-letter path, and metrics that surface a stalled consumer before customers notice."
+    - "Implemented VDV-KA compliant Aztec barcode rendering as a dependency-light library (ZXing plus a hand-written 1-bit PNG encoder built on JDK primitives), verified by decode-back tests. The barcodes are scanned by real ticket-inspection devices."
+    - "Structured the service as six independently extractable bounded contexts (Domain-Driven Design, hexagonal architecture), with streaming upload and download paths that never buffer a document in memory, and sanitized error boundaries that keep signed URLs and personal data out of logs."
+    - "Drove release quality: Testcontainers-backed integration tests, a SonarCloud quality gate, reproducible builds with dependency verification, and design specs and on-call runbooks treated as deliverables."
+  tech: ["Kotlin", "Spring Boot", "Temporal", "Apache Kafka", "Avro", "PostgreSQL", "Flyway", "AWS S3", "Kubernetes", "GitHub Actions", "Gradle"]
 
 - role: "Software Engineer · SMA Solar project"
   company: "Yatta Solutions"
@@ -18,7 +21,7 @@
     - "Architected GitLab CI/CD pipelines automating builds, code formatting, static analysis, and test coverage."
     - "Built core energy-management services and APIs in a cross-functional team, optimizing end-user energy consumption and costs."
     - "Helped achieve an 80%+ customer-satisfaction score (NPS) by consistently delivering high-quality software."
-  tech: ["Java", "Python", "TypeScript", "Bash", "REST APIs"]
+  tech: ["Java", "REST APIs", "Python", "Bash", "TypeScript", "GitLab CI"]
 
 - role: "Software Engineer · Rhenus Logistics project"
   company: "Yatta Solutions"
@@ -38,7 +41,7 @@
     - "Taught in courses on engineering software systems, software engineering, and programming for data science."
   tech: ["Java", "NoSQL", "Maven", "JML"]
 
-- role: "Research Intern · Master's thesis"
+- role: "Research Intern (M.Sc. thesis), Game Theory & Simulation"
   company: "Institute of Science and Technology Austria (ISTA)"
   period: "Feb 2020 – Sep 2020"
   location: "Klosterneuburg, Austria"
@@ -46,7 +49,7 @@
     - "Validated theoretical research by building evolutionary game-theory simulations to analyze probabilistic cooperation strategies, under the supervision of Prof. Krishnendu Chatterjee."
   tech: ["MATLAB", "Algorithms"]
 
-- role: "Research Intern · Graph Algorithms for Transit Routing"
+- role: "Research Intern, Graph Algorithms for Transit Routing"
   company: "IRIF"
   period: "Apr 2019 – Sep 2019"
   location: "Paris, France"
