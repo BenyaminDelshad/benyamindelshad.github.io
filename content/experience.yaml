@@ -5,10 +5,10 @@
   location: "Frankfurt am Main, Germany"
   highlights:
     - "Architected and built a greenfield, event-driven fulfillment service (Kotlin, Spring Boot) that turns a completed purchase into everything the customer is entitled to: generated tickets, a print-at-home PDF, archival, and a delivery email."
-    - "Designed a Temporal workflow orchestrating multi-channel delivery with saga compensation, graded blocking versus best-effort failure handling, and purchase-scoped idempotency so a retried order never delivers twice."
-    - "Built five Kafka and Avro consumer pipelines against Confluent Schema Registry, each with its own retry classification, a dead-letter path, and metrics that surface a stalled consumer before customers notice."
+    - "Designed a Temporal workflow orchestrating multi-channel delivery with graded blocking versus best-effort failure handling, and purchase-scoped idempotency so a retried order never delivers twice."
+    - "Built Kafka and Avro consumer pipelines against Confluent Schema Registry, each with its own retry classification, a dead-letter path, and metrics that surface a stalled consumer before customers notice."
     - "Implemented VDV-KA compliant Aztec barcode rendering as a dependency-light library (ZXing plus a hand-written 1-bit PNG encoder built on JDK primitives), verified by decode-back tests. The barcodes are scanned by real ticket-inspection devices."
-    - "Structured the service as six independently extractable bounded contexts (Domain-Driven Design, hexagonal architecture), with streaming upload and download paths that never buffer a document in memory, and sanitized error boundaries that keep signed URLs and personal data out of logs."
+    - "Structured the service as independently extractable bounded contexts (Domain-Driven Design, hexagonal architecture), with streaming upload and download paths that never buffer a document in memory, and sanitized error boundaries that keep signed URLs and personal data out of logs."
     - "Drove release quality: Testcontainers-backed integration tests, a SonarCloud quality gate, reproducible builds with dependency verification, and design specs and on-call runbooks treated as deliverables."
   tech: ["Kotlin", "Spring Boot", "Temporal", "Apache Kafka", "Avro", "PostgreSQL", "Flyway", "AWS S3", "Kubernetes", "GitHub Actions", "Gradle"]
 
