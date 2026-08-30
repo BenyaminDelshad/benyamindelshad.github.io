@@ -9,7 +9,7 @@
     - "Built Kafka and Avro consumer pipelines against Confluent Schema Registry, each with its own retry classification, a dead-letter path, and metrics that surface a stalled consumer before customers notice."
     - "Implemented VDV-KA compliant Aztec barcode rendering as a dependency-light library (ZXing plus a hand-written 1-bit PNG encoder built on JDK primitives), verified by decode-back tests. The barcodes are scanned by real ticket-inspection devices."
     - "Structured the service as independently extractable bounded contexts (Domain-Driven Design, hexagonal architecture), with streaming upload and download paths that never buffer a document in memory, and sanitized error boundaries that keep signed URLs and personal data out of logs."
-    - "Drove release quality: Testcontainers-backed integration tests, a SonarCloud quality gate, reproducible builds with dependency verification, and design specs and on-call runbooks treated as deliverables."
+    - "Worked to a strict release-quality bar: Testcontainers-backed integration tests, a SonarCloud quality gate, reproducible builds with dependency verification, and design specs and on-call runbooks treated as deliverables."
   tech: ["Kotlin", "Spring Boot", "Temporal", "Apache Kafka", "Avro", "PostgreSQL", "Flyway", "AWS S3", "Kubernetes", "GitHub Actions", "Gradle"]
 
 - role: "Software Engineer · SMA Solar project"
