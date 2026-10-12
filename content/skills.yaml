@@ -9,7 +9,7 @@
   items: ["PostgreSQL", "Oracle DB", "Flyway", "JPA/Hibernate"]
 
 - group: "Infrastructure"
-  items: ["Kubernetes", "Docker/Podman", "GitHub Actions", "GitLab CI/CD", "AWS S3", "Confluent Cloud", "Micrometer + structured logging", "Grafana"]
+  items: ["Kubernetes", "Helm", "ArgoCD", "Docker/Podman", "GitHub Actions", "GitLab CI/CD", "AWS S3", "Confluent Cloud", "Micrometer + structured logging", "k6 load testing", "JVM memory tuning"]
 
 - group: "Practices"
-  items: ["Domain-Driven Design", "Hexagonal architecture", "Clean Code", "TDD (JUnit, Kotest, MockK, Testcontainers)", "SonarCloud quality gates", "Scrum", "Code review"]
+  items: ["Domain-Driven Design", "Hexagonal architecture", "Clean Code", "TDD (JUnit, Kotest, MockK, Testcontainers)", "Temporal replay tests", "SonarCloud quality gates", "Scrum", "Code review"]
